@@ -13,7 +13,7 @@ public class OmikujiController {
 
 	@RequestMapping("/omikuji")
 	public String index() {
-		return "index.jsp";
+		return "omikuji_form.jsp";
 	}
 	//method to process the Form
 	@RequestMapping(value= "/process", method = RequestMethod.POST)
@@ -41,6 +41,6 @@ public class OmikujiController {
 	//Method To Show Info about OMIKUJI
 		@RequestMapping("/show")
 		public String show() {
-			return "show.jsp";
+			return "omikuji_show.jsp";
 		}
 }
